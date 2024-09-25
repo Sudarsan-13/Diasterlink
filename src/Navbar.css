@@ -1,0 +1,46 @@
+/* Custom CSS for Navbar */
+.navbar-custom {
+  background-color: #f2f2f2; /* Main navbar background color */
+  border-radius: 20px; /* Rounded corners */
+  height: 80px; /* Height of the navbar */
+  width: calc(100% - 40px); /* Full width minus margins */
+  max-width: 100%;
+  padding: 10px 20px; /* Padding for space inside the navbar (top/bottom, left/right) */
+  margin: 20px; /* Space around the navbar */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+
+.nav-elements {
+  display: flex; /* Ensure items are displayed as flex items */
+  justify-content: center; /* Center align items horizontally */
+  gap: 40px; /* Spacing between nav links */
+  background-color: #f2f2f2; /* Same background color as navbar */
+  padding: 10px 0; /* Padding for the dropdown menu */
+  border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+}
+
+.nav-elements .nav-link {
+  font-size: 18px; /* Font size for nav links */
+  color: black; /* Default link color */
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.nav-elements .nav-link:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+/* Control visibility when collapsed */
+.navbar-collapse {
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* For mobile view */
+@media (max-width: 991.98px) { /* Adjust breakpoint as needed */
+  .navbar-collapse {
+    background-color: #f2f2f2; /* Match the navbar background color */
+  }
+}
