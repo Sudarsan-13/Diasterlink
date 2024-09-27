@@ -41,46 +41,58 @@
   line-height: 27px;
 }
 
-/* Button styling for better visibility on a black background */
-.custom-btn {
-  background-color: #ffffff; /* White background for visibility */
-  color: #000000; /* Black text for contrast */
-  border: 2px solid #ffffff; /* White border */
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for visibility */
-  transition: background-color 0.3s ease;
-}
 
-.custom-btn:hover {
-  background-color: #f0f0f0; /* Slightly darker on hover */
-  color: #000;
-}
-
-/* Button in bottom-right for larger screens */
+/* Button container styling */
 .button-container {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 10px; /* Position for larger screens */
+  right: 10px; /* Position for larger screens */
   z-index: 10;
 }
 
 .bottom-right-btn {
-  background-color: #ffffff; /* White background for visibility */
-  color: #000000; /* Black text for contrast */
-  border: 2px solid #ffffff; /* White border */
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for visibility */
-  transition: background-color 0.3s ease;
+  background-color: #1E1E1E;
+  color: white;
+  margin: 23px; /* Adjust margin */
+  width: 150px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  border-radius: 20px;
+  gap: 160px;
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 
-.bottom-right-btn:hover {
-  background-color: #f0f0f0; /* Slightly darker on hover */
+/* Adjust button size and position for screens less than 580px */
+@media (max-width: 580px) {
+  .button-container {
+    position: relative; /* Change to relative positioning */
+    bottom: auto; /* Reset bottom positioning */
+    right: auto; /* Reset right positioning */
+    margin-top: 10px; /* Add margin to create space below the image */
+  }
+  
+
+
+  .bottom-right-btn {
+    font-size: 12px; /* Adjust font size */
+    margin: 10px; /* Adjust margin */
+    width: 180px; /* Reduced width */
+    height: 40px; /* Reduced height */
+  }
+}
+
+/* Move button below bottom-left of the image for screens less than 450px */
+@media (max-width: 450px) {
+  .button-container {
+    bottom: auto; /* Reset bottom positioning */
+    right: auto; /* Remove right positioning *//* Add padding-top to separate from the image */
+  }
+
+  .bottom-right-btn {
+    font-size: 10px; /* Further decrease font size */ 
+    width: 150px; /* Further reduce width */
+    height: 38px; /* Further reduce height */
+  }
 }
 
 /* Responsive Styles */
@@ -125,8 +137,8 @@
 @media (max-width: 576px) {
   .overlay-text {
     left: 5%;
-    top: 75%;
-    width: 70%;
+    top: 55%;
+    width: 65%;
   }
 
   .heading-text {
@@ -143,7 +155,7 @@
 @media (max-width: 476px) {
   .overlay-text {
     left: 5%;
-    top: 65%;
+    top: 45%;
     width: 70%;
   }
 
@@ -162,7 +174,7 @@
 @media (max-width: 324px) {
   .overlay-text {
     left: 5%;
-    top: 60%;
+    top: 40%;
     width: 70%;
   }
 
@@ -173,6 +185,24 @@
 
   .para-text {
     font-size: 10px;
+    line-height: 15px;
+    padding-bottom: 12px;
+  }
+}
+@media (max-width: 278px) {
+  .overlay-text {
+    left: 5%;
+    top: 35%;
+    width: 50%;
+  }
+
+  .heading-text {
+    font-size: 10px;
+    line-height: 23px;
+  }
+
+  .para-text {
+    font-size: 8px;
     line-height: 15px;
     padding-bottom: 12px;
   }

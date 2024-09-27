@@ -23,7 +23,7 @@ const Homesection = () => {
 
         {/* Button in bottom right corner */}
         <div className="button-container">
-          <button className="btn custom-btn">Download App</button>
+          <button className="bottom-right-btn">Download App</button>
         </div>
       </div>
     </section>
