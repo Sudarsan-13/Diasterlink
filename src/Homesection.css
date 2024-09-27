@@ -19,19 +19,19 @@
 /* Overlay text positioned on the left side */
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 5%; /* Move the text slightly inward from the left */
   transform: translateY(-50%);
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-family: 'Poppins', sans-serif;
-  width: 45%; /* Ensures text stays on the left */
+  width: 49%; /* Ensures text stays on the left */
 }
 
 .heading-text {
   font-size: 50px;
   font-weight: 700;
-  line-height: 75px;
+  line-height: 60px;
   margin-bottom: 15px;
 }
 
@@ -41,99 +41,139 @@
   line-height: 27px;
 }
 
-/* Button positioned in the bottom-right corner */
-.button-container {
-  position: absolute;
-  bottom: 5%; /* To ensure button is always near bottom */
-  right: 5%; /* Cut off some width on the right to place the button */
-}
-
+/* Button styling for better visibility on a black background */
 .custom-btn {
-  width: 287px;
-  height: 76px;
-  border-radius: 20px 0 0 0;
-  background-color:wheat;
-
+  background-color: #ffffff; /* White background for visibility */
+  color: #000000; /* Black text for contrast */
+  border: 2px solid #ffffff; /* White border */
+  padding: 10px 20px;
   font-size: 18px;
   font-weight: 600;
-  padding-top: 16px;
-  text-align: center;
-  cursor: pointer;
-   background: red;
-    z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for visibility */
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #f0f0f0; /* Slightly darker on hover */
+  color: #000;
+}
+
+/* Button in bottom-right for larger screens */
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.bottom-right-btn {
+  background-color: #ffffff; /* White background for visibility */
+  color: #000000; /* Black text for contrast */
+  border: 2px solid #ffffff; /* White border */
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for visibility */
+  transition: background-color 0.3s ease;
+}
+
+.bottom-right-btn:hover {
+  background-color: #f0f0f0; /* Slightly darker on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .overlay-text {
-    left: 5%;
-    top: 50%;
+    left: 4%;
+    top: 75%;
     transform: translateY(-50%);
-    width: 60%;
+    width: 47%;
   }
 
   .heading-text {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 38px;
+    line-height: 45px;
   }
 
   .para-text {
     font-size: 16px;
     line-height: 24px;
   }
-
-  .custom-btn {
-    width: 250px;
-    height: 65px;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .overlay-text {
     left: 5%;
-    top: 55%;
+    top: 75%;
     transform: translateY(-50%);
-    width: 80%;
+    width: 60%;
   }
 
   .heading-text {
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .para-text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 22px;
-  }
-
-  .custom-btn {
-    width: 220px;
-    height: 60px;
-    
   }
 }
 
 @media (max-width: 576px) {
   .overlay-text {
     left: 5%;
-    top: 60%;
-    width: 90%;
+    top: 75%;
+    width: 70%;
   }
 
   .heading-text {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 33px;
   }
 
   .para-text {
     font-size: 14px;
     line-height: 20px;
   }
+}
 
-  .custom-btn {
-    width: 180px;
-    height: 55px;
-    font-size: 14px;
-   
+@media (max-width: 476px) {
+  .overlay-text {
+    left: 5%;
+    top: 65%;
+    width: 70%;
+  }
+
+  .heading-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .para-text {
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 324px) {
+  .overlay-text {
+    left: 5%;
+    top: 60%;
+    width: 70%;
+  }
+
+  .heading-text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .para-text {
+    font-size: 10px;
+    line-height: 15px;
+    padding-bottom: 12px;
   }
 }
