@@ -7,7 +7,7 @@ const Homesection = () => {
       <div className="position-relative">
         {/* Background Image */}
         <img
-          src="/assets/home.jpg" // Ensure this image is in the public/assets folder
+          src="/assets/Home.jpg" // Ensure this image is in the public/assets folder
           className="background-image img-fluid"
           alt="Disaster Safety"
         />

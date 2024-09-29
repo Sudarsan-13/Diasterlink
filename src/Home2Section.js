@@ -34,7 +34,7 @@ const Home2Section = () => {
       </div>
 
       {/* Text Section */}
-      <div className="text-section mt-5">
+      <div className="text-section mt-lg-5 mt-sm-0">
         <p>Key Features</p>
         <h3 className="font-weight-bold section-heading">
           Key Features of Our Application:
