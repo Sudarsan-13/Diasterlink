@@ -4,7 +4,9 @@ import Homesection from "./Homesection";
 import Home2Section from "./Home2Section";
 import {poppins} from "@fontsource/poppins";
 import HowItWorks from "./HowItWorks";
-import HowItWorksReversed from "./HowItWorksReversed";
+import HowItWorks02 from "./HowItWorks02";
+import HowItWorks03 from "./HowItWorks03";
+import HowItWorks04 from "./HowItWorks04";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Homesection />
       <Home2Section />
       <HowItWorks />
-      <HowItWorksReversed />
+      <HowItWorks02 />
+      <HowItWorks03 />
+      <HowItWorks04 />
     </div>
   );
 }

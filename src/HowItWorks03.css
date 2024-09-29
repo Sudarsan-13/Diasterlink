@@ -23,18 +23,17 @@
 }
 
 /* Main container and section content */
-.how-it-works-container {
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
+.how-it-works-new-container {
+  background: #f4f4f4; /* Background for the second container */
+  color: black; /* Text color for better contrast */
 }
 
-.how-it-works-section-content {
+.how-it-works-new-section-content {
   width: 100%;
   max-width: 1354px;
   height: auto;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: #B1AFD1; /* Background for the new content */
   padding: 20px;
   position: relative;
   margin: 0 auto;
@@ -42,7 +41,7 @@
 
 .how-it-works-custom-heading {
   font-family: 'Poppins', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -60,7 +59,6 @@
 .how-it-works-box-style {
   width: 100px;
   height: 66px;
-  padding: 10px;
   border-radius: 30px;
   border: 2px solid lightgrey;
   text-align: center;
@@ -83,26 +81,28 @@
   max-width: 354px;
   height: auto;
   border-radius: 20px;
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+@media (max-width: 770px){
+    .how-it-works-new-section-content {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .how-it-works-custom-heading,
+  .how-it-works-custom-paragraph {
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .how-it-works-img-col {
+    order: 2; /* Ensure the image is at the bottom */
+    margin: 0 auto; /* Center the image */
+  }
 }
 
 /* Media Queries for screens below 500px */
 @media (max-width: 500px) {
-  .how-it-works-heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-  }
-
-  .how-it-works-paragraph {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: center;
-    padding: 0 10px;
-  }
 
   .how-it-works-custom-heading {
     font-size: 22px;
@@ -117,8 +117,8 @@
   }
 
   .how-it-works-custom-button {
-    width: 120px;
-    height: 35px;
+    width: 150px;
+    height: 40px;
     padding: 10px 0;
     border-radius: 8px;
     font-size: 12px;
@@ -134,5 +134,6 @@
   .how-it-works-img-fluid {
     max-width: 200px; /* Adjust image size for smaller screens */
     height: auto;
+    margin-top: 10px; /* Optional: Adjust space above the image */
   }
 }

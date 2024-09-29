@@ -29,12 +29,12 @@
   justify-content: center;
 }
 
-.how-it-works-section-content {
+.how-it-works-section-content4 {
   width: 100%;
   max-width: 1354px;
   height: auto;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: #D1B1AF;
   padding: 20px;
   position: relative;
   margin: 0 auto;
@@ -62,7 +62,7 @@
   height: 66px;
   padding: 10px;
   border-radius: 30px;
-  border: 2px solid lightgrey;
+  border: 2px solid #f4f4f4;
   text-align: center;
   line-height: 46px;
   margin: 0 auto 20px;

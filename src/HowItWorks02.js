@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./HowItWorksReversed.css"; // Import the external CSS file
+import "./HowItWorks02.css"; // Import the external CSS file
 
-const HowItWorksReversed = () => {
+const HowItWorks02 = () => {
   return (
     <Container fluid className="p-5 how-it-works-reversed-container">
       <div className="section-content">
@@ -42,4 +42,4 @@ const HowItWorksReversed = () => {
   );
 };
 
-export default HowItWorksReversed;
+export default HowItWorks02;
