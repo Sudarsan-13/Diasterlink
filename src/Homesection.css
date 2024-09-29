@@ -9,8 +9,8 @@
 
 /* Background image taking full width */
 .background-image {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 50%;
   object-fit: cover;
   border-radius: 30px;
   z-index: 1;
@@ -99,9 +99,9 @@
 @media (max-width: 1200px) {
   .overlay-text {
     left: 4%;
-    top: 75%;
+    top: 72%;
     transform: translateY(-50%);
-    width: 47%;
+    width: 59%;
   }
 
   .heading-text {
@@ -110,7 +110,7 @@
   }
 
   .para-text {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
   }
 }
@@ -118,14 +118,14 @@
 @media (max-width: 780px) {
   .overlay-text {
     left: 5%;
-    top: 75%;
+    top: 70%;
     transform: translateY(-50%);
     width: 60%;
   }
 
   .heading-text {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 29px;
+    line-height: 35px;
   }
 
   .para-text {

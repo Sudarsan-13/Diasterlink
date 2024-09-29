@@ -3,7 +3,7 @@ import "./Homesection.css"; // Updated CSS file
 
 const Homesection = () => {
   return (
-    <section className="home-section">
+    <section className="home-section container">
       <div className="position-relative">
         {/* Background Image */}
         <img
