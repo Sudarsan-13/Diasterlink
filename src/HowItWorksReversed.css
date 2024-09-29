@@ -1,0 +1,90 @@
+.how-it-works-reversed-container {
+  background: #f4f4f4; /* Light grey background for the outer container */
+}
+
+.section-content {
+  background: #87BB8A; /* Green background for the inner section */
+  max-width: 1354px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.box-style {
+  width: 100px;
+  height: 66px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid lightgrey; /* Solid border */
+  text-align: center;
+  line-height: 46px; /* Center text vertically inside the box */
+  margin: 0 auto 20px; /* Center box and add space below */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: center;
+  margin-bottom: 20px; /* Space between heading and paragraph */
+}
+
+.custom-paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px; /* Space between paragraph and button */
+  line-height: 24px;
+}
+
+.custom-button {
+  height: 55px;
+  width: 190px;
+  display: block; /* Ensure the button is block-level for centering */
+  margin: 0 auto; /* Center button */
+}
+
+/* Media Queries */
+@media (max-width: 450px) {
+  .custom-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    
+    text-align: center;
+  }
+
+  .custom-paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .custom-button {
+     width: 120px;
+    height: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .img {
+    width: 214px;
+    height: 401px;
+    border-radius: 10px 0 0 0;
+  }
+
+  .box-style {
+    width: 70px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

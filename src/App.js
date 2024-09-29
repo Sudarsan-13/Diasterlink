@@ -4,6 +4,7 @@ import Homesection from "./Homesection";
 import Home2Section from "./Home2Section";
 import {poppins} from "@fontsource/poppins";
 import HowItWorks from "./HowItWorks";
+import HowItWorksReversed from "./HowItWorksReversed";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <CustomNavbar />
       <Homesection />
       <Home2Section />
-      <HowItWorks/>
+      <HowItWorks />
+      <HowItWorksReversed />
     </div>
   );
 }
