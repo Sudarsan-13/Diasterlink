@@ -19,22 +19,22 @@ const HowItWorks = () => {
             {/* Left side: Text content */}
             <Col md={6} className="p-4 text-center text-md-left">
               {/* Box with "01" */}
-              <div className="how-it-works-box-style">01</div>
+              <div className="box-style">01</div>
 
               {/* Large Heading */}
-              <h4 className="how-it-works-custom-heading">
+              <h4 className= "custom-heading">
                 Sign Up & Customize Alerts
               </h4>
 
               {/* Paragraph */}
-              <p className="how-it-works-custom-paragraph">
+              <p className="custom-paragraph">
                 Create your profile, set your location, and choose the types of
                 alerts that matter most to you.
               </p>
 
               {/* Button */}
               <Button
-                className="how-it-works-custom-button"
+                className="custom-button"
                 variant="dark"
                 size="lg"
               >
@@ -45,7 +45,7 @@ const HowItWorks = () => {
             {/* Right side: Image */}
             <Col md={6} className="text-center">
               <img
-                className="how-it-works-img-fluid"
+                className="img img-fluid"
                 src="/Assets/01.png"
                 alt="App screenshot"
               />

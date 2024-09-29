@@ -18,7 +18,7 @@ const HowItWorks03 = () => {
             {/* Middle side: Image */}
             <Col md={4} className="text-center how-it-works-img-col">
               <img
-                className="how-it-works-img-fluid"
+                className="img-fluid"
                 src="/Assets/02.png"
                 alt="App screenshot"
               />
@@ -26,15 +26,15 @@ const HowItWorks03 = () => {
 
             {/* Right side: Text content */}
             <Col md={4} className="p-4 text-center text-md-left">
-              <h4 className="how-it-works-custom-heading">
+              <h4 className="custom-heading">
                 Analyze Detailed Data
               </h4>
-              <p className="how-it-works-custom-paragraph">
+              <p className="custom-paragraph">
                 Access detailed maps, trends, and forecasts to understand the
                 impact of disasters and make informed decisions.
               </p>
               <Button
-                className="how-it-works-custom-button"
+                className="custom-button"
                 variant="dark"
                 size="lg"
               >

@@ -6,7 +6,7 @@ import "./HowItWorks04.css"; // Import the external CSS file
 const HowItWorks = () => {
   return (
     <>
-      <Container fluid className="p-5 how-it-works-container4">
+      <Container fluid className="p-5 how-it-works-container">
         {/* Inner Content */}
         <div className="how-it-works-section-content4">
           <Row className="align-items-center justify-content-center">
@@ -16,17 +16,17 @@ const HowItWorks = () => {
               <div className="how-it-works-box-style">04</div>
 
               {/* Large Heading */}
-              <h4 className="how-it-works-custom-heading">Take Action</h4>
+              <h4 className="custom-heading">Take Action</h4>
 
               {/* Paragraph */}
-              <p className="how-it-works-custom-paragraph">
+              <p className="custom-paragraph">
                 Use verified evacuation routes and resource centers to respond
                 effectively in times of crisis.
               </p>
 
               {/* Button */}
               <Button
-                className="how-it-works-custom-button"
+                className="custom-button"
                 variant="dark"
                 size="lg"
               >

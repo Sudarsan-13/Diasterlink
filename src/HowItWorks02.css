@@ -48,6 +48,26 @@
 }
 
 /* Media Queries */
+
+@media (max-width: 1050px){
+  .custom-heading {
+    font-size: 35px;
+    line-height: 60px;
+    
+  }
+
+  .custom-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .box-style {
+    width: 80px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
 @media (max-width: 450px) {
   .custom-heading {
     font-family: 'Poppins', sans-serif;
@@ -75,7 +95,7 @@
     font-size: 12px;
   }
 
-  .img {
+  .img .img-fluid{
     width: 214px;
     height: 401px;
     border-radius: 10px 0 0 0;

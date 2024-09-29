@@ -85,6 +85,7 @@
   border-radius: 20px;
 }
 
+
 /* Media Queries for screens below 500px */
 @media (max-width: 500px) {
   .how-it-works-heading {

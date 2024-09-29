@@ -4,7 +4,7 @@
   margin-bottom: 40px; /* Space between top text and container */
 }
 
-.how-it-works-heading {
+.heading {
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
   font-weight: 700;
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.how-it-works-paragraph {
+.paragraph {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -39,7 +39,7 @@
   margin: 0 auto;
 }
 
-.how-it-works-custom-heading {
+.custom-heading {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -48,7 +48,7 @@
   margin-bottom: 20px;
 }
 
-.how-it-works-custom-paragraph {
+.custom-paragraph {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   text-align: center;
@@ -68,7 +68,7 @@
   font-weight: bold;
 }
 
-.how-it-works-custom-button {
+.custom-button {
   height: 55px;
   width: 190px;
   display: block;
@@ -76,12 +76,25 @@
   font-size: 16px;
 }
 
-.how-it-works-img-fluid {
+.img{
   width: 100%;
   max-width: 354px;
   height: auto;
   border-radius: 20px;
   margin-bottom: 20px; /* Add space below the image */
+}
+
+@media (max-width: 1100px){
+
+  .custom-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .custom-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 770px){
@@ -90,8 +103,8 @@
     flex-direction: column; /* Stack columns vertically */
   }
 
-  .how-it-works-custom-heading,
-  .how-it-works-custom-paragraph {
+  .custom-heading,
+  .custom-paragraph {
     text-align: center; /* Center text for smaller screens */
   }
 
@@ -104,19 +117,19 @@
 /* Media Queries for screens below 500px */
 @media (max-width: 500px) {
 
-  .how-it-works-custom-heading {
+  .custom-heading {
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 10px;
   }
 
-  .how-it-works-custom-paragraph {
+  .custom-paragraph {
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 20px;
   }
 
-  .how-it-works-custom-button {
+  .custom-button {
     width: 150px;
     height: 40px;
     padding: 10px 0;
@@ -131,7 +144,7 @@
     line-height: 30px;
   }
 
-  .how-it-works-img-fluid {
+  .img-fluid .img {
     max-width: 200px; /* Adjust image size for smaller screens */
     height: auto;
     margin-top: 10px; /* Optional: Adjust space above the image */
