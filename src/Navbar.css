@@ -1,77 +1,81 @@
 /* Navbar styles */
 .navbar-custom {
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  height: 80px;
-  width: calc(100% - 40px);
-  max-width: 100%;
-  padding: 10px 20px;
-  margin: 20px;
-  transition: background-color 0.3s ease;
+ background-color: #f2f2f2;
+ border-radius: 20px;
+ height: 80px;
+ width: calc(100% - 40px);
+ max-width: 100%;
+ padding: 10px 20px;
+ margin: 20px;
+ transition: background-color 0.3s ease;
 }
 
 /* For larger screens, display nav elements in row */
 .nav-elements {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+ display: flex;
+ justify-content: center;
+ gap: 20px;
 }
 
 /* Nav link styling */
 .nav-elements .nav-link {
-  font-size: 18px;
-  color: black;
-  transition: color 0.3s ease;
+ font-size: 18px;
+ color: black;
+ transition: color 0.3s ease;
 }
 
 .nav-elements .nav-link:hover {
-  color: #007bff;
+ color: #007bff;
 }
 
 /* Off-canvas styles for mobile */
 .offcanvas-nav {
-  position: fixed;
-  top: 0;
-  right: -100%; /* Hidden by default */
-  height: 100vh;
-  width: 250px;
-  background-color: #f2f2f2;
-  padding-top: 20px;
-  transition: right 0.3s ease;
-  z-index: 9999;
+ position: fixed;
+ top: 0;
+ right: -100%; /* Hidden by default */
+ height: 100vh;
+ width: 250px;
+ background-color: #f2f2f2;
+ padding-top: 20px;
+ transition: right 0.3s ease;
+ z-index: 9999;
 }
 
 .offcanvas-show {
-  right: 0; /* Show off-canvas */
+ right: 0; /* Show off-canvas */
 }
 
 .offcanvas-nav .nav-elements {
-  display: flex;
-  flex-direction: column; /* Display nav links in a column on mobile */
-  gap: 20px;
-  padding: 20px;
+ display: flex;
+ flex-direction: column; /* Display nav links in a column on mobile */
+ gap: 20px;
+ padding: 20px;
 }
 
-/* Backdrop for off-canvas menu */
+/* Remove the blackout from the off-canvas backdrop */
 .offcanvas-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backdrop */
-  z-index: 9998;
+ background-color: transparent !important; /* Make it transparent */
 }
 
-/* Blur content when navbar is expanded */
-.blur-content {
-  filter: blur(8px);
-  transition: filter 0.3s ease;
+/* Make sure no other styles apply blackout */
+.offcanvas-backdrop.show {
+ background-color: transparent !important; /* Force transparency when shown */
 }
+
+/* Light shadow effect when off-canvas is opened */
+/* Add a more prominent shadow effect when off-canvas is opened */
+.offcanvas-show {
+ right: 0;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow effect */
+ transition: right 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
 
 /* Hide off-canvas and related elements on larger screens */
 @media (min-width: 992px) {
-  .offcanvas-nav {
-    display: none; /* Hide off-canvas on large screens */
-  }
+ .offcanvas-nav {
+  display: none; /* Hide off-canvas on large screens */
+ }
 }
