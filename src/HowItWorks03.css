@@ -81,7 +81,7 @@
   max-width: 354px;
   height: auto;
   border-radius: 20px;
-  margin-bottom: 20px; /* Add space below the image */
+  margin-bottom: 20px; 
 }
 
 @media (max-width: 1100px){
@@ -100,21 +100,20 @@
 @media (max-width: 770px){
     .how-it-works-new-section-content {
     display: flex;
-    flex-direction: column; /* Stack columns vertically */
+    flex-direction: column; 
   }
 
   .custom-heading,
   .custom-paragraph {
-    text-align: center; /* Center text for smaller screens */
+    text-align: center; 
   }
 
   .how-it-works-img-col {
-    order: 2; /* Ensure the image is at the bottom */
-    margin: 0 auto; /* Center the image */
+    order: 2; 
+    margin: 0 auto; 
   }
 }
 
-/* Media Queries for screens below 500px */
 @media (max-width: 500px) {
 
   .custom-heading {
@@ -145,8 +144,8 @@
   }
 
   .img-fluid .img {
-    max-width: 200px; /* Adjust image size for smaller screens */
+    max-width: 200px;
     height: auto;
-    margin-top: 10px; /* Optional: Adjust space above the image */
+    margin-top: 10px; 
   }
 }

@@ -1,18 +1,18 @@
 import React from "react";
-import "./Homesection.css"; // Updated CSS file
+import "./Homesection.css"; 
 
 const Homesection = () => {
   return (
     <section className="home-section container">
       <div className="position-relative">
-        {/* Background Image */}
+    
         <img
-          src="/Assets/home.png" // Ensure this image is in the public/assets folder
+          src="/Assets/home.png" 
           className="background-image img-fluid"
           alt="Disaster Safety"
         />
 
-        {/* Overlay Text - Positioned on the left */}
+      
         <div className="overlay-text">
           <h1 className="heading-text">Stay Ahead of Disasters, Stay Safe</h1>
           <p className="para-text">
@@ -21,7 +21,7 @@ const Homesection = () => {
           </p>
         </div>
 
-        {/* Button in bottom right corner */}
+       
         <div className="button-container">
           <button className="bottom-right-btn">Download App</button>
         </div>

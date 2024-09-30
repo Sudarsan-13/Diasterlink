@@ -1,11 +1,18 @@
 .how-it-works-reversed-container {
-  background: #f4f4f4; /* Light grey background for the outer container */
+  background: #f4f4f4; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.how-it-works-reversed-container:hover {
+  transform: rotateY(5deg) rotateX(5deg);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .section-content {
-  background: #87BB8A; /* Green background for the inner section */
-  max-width: 1354px; /* Max width for larger screens */
-  margin: 0 auto; /* Center the content horizontally */
+  background: #87BB8A; 
+  max-width: 1354px; 
+  margin: 0 auto;
   padding: 20px;
   border-radius: 30px;
 }
@@ -15,10 +22,10 @@
   height: 66px;
   padding: 10px;
   border-radius: 30px;
-  border: 2px solid lightgrey; /* Solid border */
+  border: 2px solid lightgrey;
   text-align: center;
-  line-height: 46px; /* Center text vertically inside the box */
-  margin: 0 auto 20px; /* Center box and add space below */
+  line-height: 46px;
+  margin: 0 auto 20px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -29,31 +36,29 @@
   font-weight: 700;
   line-height: 75px;
   text-align: center;
-  margin-bottom: 20px; /* Space between heading and paragraph */
+  margin-bottom: 20px;
 }
 
 .custom-paragraph {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 30px; /* Space between paragraph and button */
+  margin-bottom: 30px;
   line-height: 24px;
 }
 
 .custom-button {
   height: 55px;
   width: 190px;
-  display: block; /* Ensure the button is block-level for centering */
-  margin: 0 auto; /* Center button */
+  display: block;
+  margin: 0 auto;
 }
 
 /* Media Queries */
-
-@media (max-width: 1050px){
+@media (max-width: 1050px) {
   .custom-heading {
     font-size: 35px;
     line-height: 60px;
-    
   }
 
   .custom-paragraph {
@@ -68,6 +73,7 @@
     line-height: 36px;
   }
 }
+
 @media (max-width: 450px) {
   .custom-heading {
     font-family: 'Poppins', sans-serif;
@@ -75,7 +81,6 @@
     line-height: 33px;
     margin-bottom: 10px;
     font-weight: 700;
-    
     text-align: center;
   }
 
@@ -88,14 +93,14 @@
   }
 
   .custom-button {
-     width: 120px;
+    width: 120px;
     height: 40px;
     padding: 10px 0;
     border-radius: 8px;
     font-size: 12px;
   }
 
-  .img .img-fluid{
+  .img .img-fluid {
     width: 214px;
     height: 401px;
     border-radius: 10px 0 0 0;

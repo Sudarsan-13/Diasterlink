@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./HowItWorks.css"; // Import the external CSS file
+import "./HowItWorks.css"; 
 
 const HowItWorks = () => {
   return (

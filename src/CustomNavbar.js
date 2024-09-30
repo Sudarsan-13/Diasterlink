@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import "./Navbar.css"; // Link to your custom CSS
+import "./Navbar.css";
 
 const CustomNavbar = () => {
-  const [expanded, setExpanded] = useState(false); // State to manage navbar collapse
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Track window width
+  const [expanded, setExpanded] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleResize = () => setWindowWidth(window.innerWidth);
 
-  // Add event listener to track window resize
+ 
   React.useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
@@ -16,12 +16,12 @@ const CustomNavbar = () => {
     };
   }, []);
 
-  const handleToggle = () => setExpanded(!expanded); // Toggle state
-  const handleLinkClick = () => setExpanded(false); // Close on link click
+  const handleToggle = () => setExpanded(!expanded);
+  const handleLinkClick = () => setExpanded(false); 
 
   return (
     <>
-      {/* Navbar Component */}
+    
       <Navbar expand="lg" className="py-3 navbar-custom">
         <Container fluid>
           <Navbar.Brand href="#">
@@ -35,7 +35,7 @@ const CustomNavbar = () => {
             DisasterLink
           </Navbar.Brand>
 
-          {/* Only show Navbar.Toggle when screen width is less than 991px */}
+         
           {windowWidth <= 991 ? (
             <Navbar.Toggle
               aria-controls="offcanvas-navbar"
@@ -45,7 +45,7 @@ const CustomNavbar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
           )}
 
-          {/* Hide Navbar.Collapse on smaller screens */}
+      
           {windowWidth > 991 && (
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto nav-elements">
@@ -70,7 +70,7 @@ const CustomNavbar = () => {
         </Container>
       </Navbar>
 
-      {/* Off-canvas menu for smaller screens (below 991px) */}
+     
       {windowWidth <= 991 && (
         <div className={`offcanvas-nav ${expanded ? "offcanvas-show" : ""}`}>
           <Nav className="nav-elements">

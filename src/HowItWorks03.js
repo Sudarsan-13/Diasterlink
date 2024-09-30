@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./HowItWorks03.css"; // Import the external CSS file
+import "./HowItWorks03.css";
 
 const HowItWorks03 = () => {
   return (
     <>
-      {/* Second Section: Box on the left of the image with a new background color */}
+      
       <Container fluid className="p-5 how-it-works-new-container">
         <div className="how-it-works-new-section-content">
           <Row className="align-items-center justify-content-center">

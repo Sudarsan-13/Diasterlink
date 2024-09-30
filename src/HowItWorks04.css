@@ -1,7 +1,7 @@
-/* Styling for new heading and paragraph outside the container */
+
 .how-it-works-top-text {
   text-align: center;
-  margin-bottom: 40px; /* Space between top text and container */
+  margin-bottom: 40px; 
 }
 
 .how-it-works-heading {
@@ -19,10 +19,9 @@
   line-height: 27px;
   text-align: center;
   max-width: 800px;
-  margin: 0 auto; /* Center the paragraph */
+  margin: 0 auto;
 }
 
-/* Main container and section content */
 .how-it-works-container {
   background-color: #f4f4f4;
   display: flex;
@@ -132,7 +131,7 @@
   }
 
   .how-it-works-img-fluid {
-    max-width: 200px; /* Adjust image size for smaller screens */
+    max-width: 200px; 
     height: auto;
   }
 }

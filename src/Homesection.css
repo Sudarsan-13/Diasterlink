@@ -1,4 +1,4 @@
-/* Homesection Styling */
+
 .home-section {
   position: relative;
   width: 100%;
@@ -8,7 +8,7 @@
   color:#f4f4f4;
 }
 
-/* Background image taking full width */
+
 .background-image {
   width: 100%;
   height: 50%;
@@ -18,16 +18,16 @@
   background-color: #f4f4f4;
 }
 
-/* Overlay text positioned on the left side */
+
 .overlay-text {
   position: absolute;
   top: 75%;
-  left: 5%; /* Move the text slightly inward from the left */
+  left: 5%;
   transform: translateY(-50%);
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   font-family: 'Poppins', sans-serif;
-  width: 49%; /* Ensures text stays on the left */
+  width: 49%; 
 }
 
 .heading-text {
@@ -44,56 +44,56 @@
 }
 
 
-/* Button container styling */
+
 .button-container {
   position: absolute;
-  bottom: 10px; /* Position for larger screens */
-  right: 10px; /* Position for larger screens */
+  bottom: 10px; 
+  right: 10px; 
   z-index: 10;
 }
 
 .bottom-right-btn {
   background-color: #1E1E1E;
   color: white;
-  margin: 23px; /* Adjust margin */
-  width: 150px; /* Fixed width */
-  height: 50px; /* Fixed height */
+  margin: 23px;
+  width: 150px; 
+  height: 50px; 
   border-radius: 20px;
   gap: 160px;
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-/* Adjust button size and position for screens less than 580px */
+
 @media (max-width: 580px) {
   .button-container {
-    position: relative; /* Change to relative positioning */
-    bottom: auto; /* Reset bottom positioning */
-    right: auto; /* Reset right positioning */
-    margin-top: 10px; /* Add margin to create space below the image */
+    position: relative;
+    bottom: auto; 
+    right: auto;
+    margin-top: 10px; 
   }
   
 
 
   .bottom-right-btn {
-    font-size: 12px; /* Adjust font size */
-    margin: 10px; /* Adjust margin */
-    width: 180px; /* Reduced width */
-    height: 40px; /* Reduced height */
+    font-size: 12px;
+    margin: 10px; 
+    width: 180px;
+    height: 40px; 
   }
 }
 
-/* Move button below bottom-left of the image for screens less than 450px */
+
 @media (max-width: 450px) {
   .button-container {
-    bottom: auto; /* Reset bottom positioning */
-    right: auto; /* Remove right positioning *//* Add padding-top to separate from the image */
+    bottom: auto; 
+    right: auto; 
   }
 
   .bottom-right-btn {
-    font-size: 10px; /* Further decrease font size */ 
-    width: 150px; /* Further reduce width */
-    height: 38px; /* Further reduce height */
+    font-size: 10px;  
+    width: 150px; 
+    height: 38px; 
   }
 }
 
