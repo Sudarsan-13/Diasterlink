@@ -7,10 +7,12 @@ import HowItWorks from "./HowItWorks";
 import HowItWorks02 from "./HowItWorks02";
 import HowItWorks03 from "./HowItWorks03";
 import HowItWorks04 from "./HowItWorks04";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
     <div className="App">
+      <SpeedInsights/>
       <CustomNavbar />
       <Homesection />
       <Home2Section />

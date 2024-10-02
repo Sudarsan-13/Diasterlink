@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home2Section.css"; // Import the CSS file
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const Home2Section = () => {
   return (
