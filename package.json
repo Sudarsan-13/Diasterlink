@@ -15,14 +15,12 @@
     "motion": "^10.18.0",
     "my-navbar-app": "file:",
     "nth-check": "2.0.1",
-    "postcss": "^8.4.47",
+    "postcss": "8.4.31",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
-    "resolve-url-loader": "^5.0.0",
     "styled-components": "^6.1.13",
-    "svgo": "^3.3.2",
     "web-vitals": "^2.1.4",
     "webpack": "^5.95.0"
   },
@@ -57,5 +55,9 @@
     "@babel/plugin-transform-numeric-separator": "^7.24.7",
     "@babel/plugin-transform-optional-chaining": "^7.24.8",
     "@babel/plugin-transform-private-methods": "^7.25.4"
+  },
+  "resolutions": {
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31"
   }
 }
