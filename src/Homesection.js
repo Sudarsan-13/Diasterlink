@@ -1,18 +1,59 @@
-import React from "react";
-import "./Homesection.css"; 
+import React, { useEffect } from "react";
+import "./Homesection.css";
+import ScrollReveal from "scrollreveal";
 
 const Homesection = () => {
+  useEffect(() => {
+    // Reveal heading text from the top
+    ScrollReveal().reveal(".heading-text", {
+      origin: "top",
+      distance: "50px",
+      duration: 800,
+      delay: 200,
+      easing: "ease-in-out",
+      opacity: 0,
+      reset:true,
+    });
+
+    // Reveal paragraph text from the left
+    ScrollReveal().reveal(".para-text", {
+      origin: "left",
+      distance: "40px",
+      duration: 800,
+      delay: 250,
+      easing: "ease-in-out",
+      opacity: 0,
+    });
+
+    // Fade in image
+    ScrollReveal().reveal(".background-image", {
+      opacity: 0, // Start with opacity 0
+      duration: 1200,
+      delay: 100, // Adjust delay so it fades in slightly earlier or later than the text
+      easing: "ease-in-out",
+      reset: true,
+    });
+
+    ScrollReveal().reveal(".animate", {
+      origin: "bottom",
+      distance: "50px",
+      duration: 900,
+      delay: 600, // Slightly delayed after the paragraph
+      easing: "ease-in-out",
+      opacity: 0,
+      reset: true,
+    });
+  }, []);
+
   return (
     <section className="home-section container">
       <div className="position-relative">
-    
         <img
-          src="/Assets/home.png" 
+          src="/Assets/Home.png"
           className="background-image img-fluid"
           alt="Disaster Safety"
         />
 
-      
         <div className="overlay-text">
           <h1 className="heading-text">Stay Ahead of Disasters, Stay Safe</h1>
           <p className="para-text">
@@ -21,9 +62,10 @@ const Homesection = () => {
           </p>
         </div>
 
-       
         <div className="button-container">
-          <button className="bottom-right-btn">Download App</button>
+          <button className="animate">
+            <span>Download App</span>
+          </button>
         </div>
       </div>
     </section>

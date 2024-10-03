@@ -13,7 +13,7 @@
   width: 100%;
   height: 50%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
   z-index: 1;
   background-color: #f4f4f4;
 }
@@ -43,39 +43,68 @@
   line-height: 27px;
 }
 
-
-
 .button-container {
   position: absolute;
-  bottom: 10px; 
-  right: 10px; 
-  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
 }
 
-.bottom-right-btn {
-  background-color: #1E1E1E;
-  color: white;
-  margin: 23px;
-  width: 150px; 
-  height: 50px; 
-  border-radius: 20px;
-  gap: 160px;
-  opacity: 1;
+.animate {
+  position: relative;
+  width: 160px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: black;
+  color: black; /* Default text color */
+  overflow: hidden;
   transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  z-index: 1; /* Ensure button text is above the background */
+}
+
+.animate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: transform 0.3s ease;
+  transform-origin: bottom; /* Shrinks from bottom to top */
+  transform: scaleY(1); /* Start fully visible */
+  z-index: -1; /* Behind the button content */
+}
+
+.animate:hover::before {
+  transform: scaleY(0); /* Shrink background to 0% height */
+}
+
+.animate:hover {
+  color: white; /* Change text to white on hover */
 }
 
 
+@media (max-width: 780px) {
+  
+  .animate{
+    margin-top:10px;
+  }
+}
 @media (max-width: 580px) {
   .button-container {
     position: relative;
     bottom: auto; 
     right: auto;
-    margin-top: 10px; 
   }
-  
 
-
-  .bottom-right-btn {
+  .animate {
     font-size: 12px;
     margin: 10px; 
     width: 180px;
@@ -83,14 +112,13 @@
   }
 }
 
-
 @media (max-width: 450px) {
   .button-container {
     bottom: auto; 
     right: auto; 
   }
 
-  .bottom-right-btn {
+  .animate{
     font-size: 10px;  
     width: 150px; 
     height: 38px; 

@@ -1,4 +1,3 @@
-/* Styling for new heading and paragraph outside the container */
 .how-it-works-top-text {
   text-align: center;
   margin-bottom: 40px; /* Space between top text and container */
@@ -24,8 +23,8 @@
 
 /* Main container and section content */
 .how-it-works-new-container {
-  background: #f4f4f4; /* Background for the second container */
-  color: black; /* Text color for better contrast */
+  background: #f4f4f4; 
+  color: black; 
 }
 
 .how-it-works-new-section-content {

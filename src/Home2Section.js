@@ -1,8 +1,23 @@
-import React from "react";
-import "./Home2Section.css"; // Import the CSS file
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal"; // Import ScrollReveal
+import "./Home2Section.css";
 
 const Home2Section = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "50px", // Distance to move
+      duration: 800, // Duration of the animation
+      delay: 200, // Delay between animations
+      reset: true, // Reset animation when scrolling back
+    });
+
+    // Reveal settings for each section
+    sr.reveal(".left-images", { origin: "left" });
+    sr.reveal(".large-image, .section-heading", { origin: "right" });
+    sr.reveal(".text-section", { origin: "top" });
+    sr.reveal(".feature-item", { origin: "top", interval: 200 }); // Delay for each feature item
+  }, []);
+
   return (
     <div className="home2-section container py-5">
       <div className="image-section d-flex flex-wrap justify-content-center">

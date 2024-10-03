@@ -1,4 +1,3 @@
-/* Styling for new heading and paragraph outside the container */
 .how-it-works-top-text {
   text-align: center;
   margin-bottom: 40px; /* Space between top text and container */
@@ -40,24 +39,15 @@
   margin: 0 auto;
 }
 
-.how-it-works-custom-heading {
-  font-family: 'Poppins', sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 20px;
+.section-content {
+  background: #87BB8A;
+  max-width: 1354px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
 }
 
-.how-it-works-custom-paragraph {
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 30px;
-  line-height: 24px;
-}
-
-.how-it-works-box-style {
+.box-style {
   width: 100px;
   height: 66px;
   padding: 10px;
@@ -70,23 +60,50 @@
   font-weight: bold;
 }
 
-.how-it-works-custom-button {
+.custom-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.custom-button {
   height: 55px;
   width: 190px;
   display: block;
   margin: 0 auto;
-  font-size: 16px;
 }
 
-.how-it-works-img-fluid {
-  width: 100%;
-  max-width: 354px;
-  height: auto;
-  border-radius: 20px;
+/* Media Queries */
+@media (max-width: 1050px) {
+  .custom-heading {
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+  .custom-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .box-style {
+    width: 80px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 36px;
+  }
 }
 
-
-/* Media Queries for screens below 500px */
 @media (max-width: 500px) {
   .how-it-works-heading {
     font-family: 'Poppins', sans-serif;
@@ -105,19 +122,19 @@
     padding: 0 10px;
   }
 
-  .how-it-works-custom-heading {
+  .custom-heading {
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 10px;
   }
 
-  .how-it-works-custom-paragraph {
+  .custom-paragraph {
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 20px;
   }
 
-  .how-it-works-custom-button {
+  .custom-button {
     width: 120px;
     height: 35px;
     padding: 10px 0;
@@ -125,14 +142,14 @@
     font-size: 12px;
   }
 
-  .how-it-works-box-style {
+  .box-style {
     width: 80px;
     height: 50px;
     font-size: 16px;
     line-height: 30px;
   }
 
-  .how-it-works-img-fluid {
+  .img {
     max-width: 200px; /* Adjust image size for smaller screens */
     height: auto;
   }

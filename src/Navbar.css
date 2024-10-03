@@ -1,76 +1,86 @@
-
+/* Navbar custom styles */
 .navbar-custom {
- background-color: #f2f2f2;
- border-radius: 20px;
- height: 80px;
- width: calc(100% - 40px);
- max-width: 100%;
- padding: 10px 20px;
- margin: 20px;
- transition: background-color 0.3s ease;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  height: 80px;
+  width: calc(100% - 40px);
+  max-width: 100%;
+  padding: 10px 20px;
+  margin: 20px;
+  transition: background-color 0.3s ease;
+  transform: translateY(-100px); /* Start offscreen */
+  opacity: 0; /* Start invisible */
+  animation: navbarDrop 1s ease forwards; /* Apply drop animation */
 }
 
+@keyframes navbarDrop {
+  0% {
+    transform: translateY(-100px); /* Offscreen at the top */
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
 
+/* Rest of your existing styles */
 .nav-elements {
- display: flex;
- justify-content: center;
- gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-
 
 .nav-elements .nav-link {
- font-size: 18px;
- color: black;
- transition: color 0.3s ease;
+  font-size: 18px;
+  color: black;
+  transition: color 0.3s ease;
 }
 
 .nav-elements .nav-link:hover {
- color: #007bff;
+  color: #007bff;
 }
 
-
 .offcanvas-nav {
- position: fixed;
- top: 0;
- right: -100%; 
- height: 100vh;
- width: 250px;
- background-color: #f2f2f2;
- padding-top: 20px;
- transition: right 0.3s ease;
- z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 250px;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  transition: right 0.3s ease;
+  z-index: 9999;
 }
 
 .offcanvas-show {
- right: 0; 
+  right: 0;
 }
 
 .offcanvas-nav .nav-elements {
- display: flex;
- flex-direction: column; 
- gap: 20px;
- padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
 .offcanvas-backdrop {
- background-color: transparent !important; 
+  background-color: transparent !important;
 }
 
 /* Make sure no other styles apply blackout */
 .offcanvas-backdrop.show {
- background-color: transparent !important; 
+  background-color: transparent !important;
 }
-
 
 .offcanvas-show {
- right: 0;
- box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2); 
- transition: right 0.3s ease, box-shadow 0.3s ease;
+  right: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 @media (min-width: 992px) {
- .offcanvas-nav {
-  display: none; /* Hide off-canvas on large screens */
- }
+  .offcanvas-nav {
+    display: none; /* Hide off-canvas on large screens */
+  }
 }
