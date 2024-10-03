@@ -4,7 +4,7 @@ import ScrollReveal from "scrollreveal";
 
 const Homesection = () => {
   useEffect(() => {
-    // Reveal heading text from the top
+
     ScrollReveal().reveal(".heading-text", {
       origin: "top",
       distance: "50px",
@@ -15,7 +15,6 @@ const Homesection = () => {
       reset:true,
     });
 
-    // Reveal paragraph text from the left
     ScrollReveal().reveal(".para-text", {
       origin: "left",
       distance: "40px",
@@ -25,11 +24,10 @@ const Homesection = () => {
       opacity: 0,
     });
 
-    // Fade in image
     ScrollReveal().reveal(".background-image", {
       opacity: 0, // Start with opacity 0
       duration: 1200,
-      delay: 100, // Adjust delay so it fades in slightly earlier or later than the text
+      delay: 100, 
       easing: "ease-in-out",
       reset: true,
     });
