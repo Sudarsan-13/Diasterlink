@@ -49,7 +49,7 @@ const Homesection = () => {
     <section className="home-section container">
       <div className="position-relative">
         <img
-          src="/Assets/Home.png"
+          src="/Assets/home.png"
           className="background-image img-fluid"
           alt="Disaster Safety"
         />
