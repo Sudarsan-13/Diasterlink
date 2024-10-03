@@ -12,7 +12,7 @@ const Homesection = () => {
       delay: 200,
       easing: "ease-in-out",
       opacity: 0,
-      reset:true,
+      
     });
 
     ScrollReveal().reveal(".para-text", {
@@ -21,7 +21,7 @@ const Homesection = () => {
       duration: 800,
       delay: 250,
       easing: "ease-in-out",
-      opacity: 0,
+     
     });
 
     ScrollReveal().reveal(".background-image", {
@@ -29,7 +29,7 @@ const Homesection = () => {
       duration: 1200,
       delay: 100, 
       easing: "ease-in-out",
-      reset: true,
+     
     });
 
     ScrollReveal().reveal(".animate", {
@@ -39,7 +39,7 @@ const Homesection = () => {
       delay: 600, // Slightly delayed after the paragraph
       easing: "ease-in-out",
       opacity: 0,
-      reset: true,
+      
     });
   }, []);
 

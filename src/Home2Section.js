@@ -8,7 +8,7 @@ const Home2Section = () => {
       distance: "50px", // Distance to move
       duration: 800, // Duration of the animation
       delay: 200, // Delay between animations
-      reset: true, // Reset animation when scrolling back
+       // Reset animation when scrolling back
     });
 
     // Reveal settings for each section
