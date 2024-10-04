@@ -6,6 +6,7 @@ import {poppins} from "@fontsource/poppins";
 import HowItWorks from "./HowItWorks";
 import HowItWorks03 from "./HowItWorks03";
 import HowItWorks04 from "./HowItWorks04";
+import Benefits from "./Benefits";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Footer from "./Footer";
 
@@ -19,6 +20,7 @@ function App() {
       <HowItWorks />
       <HowItWorks03 />
       <HowItWorks04 />
+      <Benefits />
       <Footer />
     </div>
   );

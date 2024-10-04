@@ -19,7 +19,7 @@ const Home2Section = () => {
   }, []);
 
   return (
-    <div className="home2-section container py-5">
+    <div className="home2-section container py-5 HI">
       <div className="image-section d-flex flex-wrap justify-content-center">
         {/* First column with three images */}
         <div className="left-images d-flex flex-column">
