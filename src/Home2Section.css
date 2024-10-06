@@ -11,6 +11,7 @@
  width: 50%;
  flex-wrap: wrap;
  padding: 20px 0;
+  background-color: #f4f4f4;
 }
 
 .left-images {
@@ -19,6 +20,7 @@
  justify-content: flex-start;
  margin-right: 10px;
  height: 60%;
+
 }
 
 .large-image {

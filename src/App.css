@@ -2,3 +2,10 @@
     overflow: hidden;
     background-color: #f4f4f4;
 }
+body, html {
+  background-color: #f4f4f4; /* Ensure background color for the entire page */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+

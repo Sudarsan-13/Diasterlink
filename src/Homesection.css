@@ -1,9 +1,12 @@
+.ONE{
+  background-color: #f4f4f4;
+}
 
 .home-section {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 0;
   margin-top: 0;
   color:#f4f4f4;
 }
@@ -16,6 +19,7 @@
   border-radius: 20px;
   z-index: 1;
   background-color: #f4f4f4;
+  margin-top: 20px;
 }
 
 
