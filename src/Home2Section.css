@@ -1,10 +1,19 @@
+.one{
+  background-color: #f4f4f4;
+}
+
 .home2-section {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
  overflow: hidden;
+  background-color: #f4f4f4; /* Ensures the entire section has this background */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
 }
-
+.image-section, .text-section {
+  background-color: #f4f4f4; /* Ensure the background color applies to these sections too */
+}
 .image-section {
  margin-top: 5%;
  display: flex;
@@ -20,6 +29,7 @@
  justify-content: flex-start;
  margin-right: 10px;
  height: 60%;
+ background-color: #f4f4f4; 
 
 }
 
@@ -29,16 +39,19 @@
  align-items: center;
  height: 90%;
  margin-top: 30px;
+ background-color: #f4f4f4; 
 }
 
 .image-style {
  max-width: 100%;
  height: auto;
+ background-color: #f4f4f4; 
 }
 
 .text-section {
  width: 48%;
  padding-left: 40px;
+ background-color: #f4f4f4; 
 }
 
 p {
@@ -79,6 +92,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0;
+   background-color: #f4f4f4;
  }
  .left-images {
   display: flex;
@@ -103,6 +117,7 @@ p {
  .image-section,
  .text-section {
   width: 100%;
+   margin: 0; 
  }
  .large-image {
   padding-top: 24px;

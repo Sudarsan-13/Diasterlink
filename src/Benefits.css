@@ -24,21 +24,23 @@
 }
 
 .cards-wrapper {
-  width: 1200px;
+  width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
 }
 
 .cards-container {
   display: flex;
   gap: 20px;
   flex-wrap: nowrap;
-  transition: all 0.1s ease-out;
+  animation: scroll-left 20s linear infinite;
 }
 
+/* Card Styling */
 .card {
-  width: 400px;
-  height: 350px;
+  width: 370px;
+  height: 330px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -67,24 +69,60 @@
 
 .card-description {
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 29px;
   color: #333;
 }
 
-@media screen and (max-width: 1200px) {
-  .cards-wrapper {
-    width: 90%;
+/* CSS Keyframe for Continuous Infinite Scroll */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Shift entire container left by 100% width */
+  }
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .cards-container {
+    overflow-x: auto;
+    animation: none; /* Disable animation for mobile */
+  }
+
+  .card-title{
+    line-height: 26px;
   }
 
   .card {
     width: 300px;
-    height: 290px;
+    height: 300px;
+    margin: 0 10px;
   }
 
   .card-description {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .benefits-title{
+    font-size: 16px;
+    margin-left: 10px
+  }
+  .explore-heading{
+    font-size: 38px;
+    line-height: 60px;
+    margin-left: 7px;
   }
 }
 
+/* Hide scrollbars on mobile */
+.cards-container {
+  -ms-overflow-style: none; /* Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

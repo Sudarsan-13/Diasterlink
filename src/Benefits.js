@@ -4,7 +4,7 @@ import "./Benefits.css";
 const Benefits = () => {
   const cardData = [
     {
-      title: "Instant Real-Time Alerts",
+      title: "Instant Real-Time Alerts for easy execution",
       description:
         "Stay updated with immediate notifications for ongoing disasters. Get information instantly when a natural disaster occurs near you. Always be prepared and aware.",
       icon: "/Assets/alert-icon.png",
@@ -30,30 +30,22 @@ const Benefits = () => {
   ];
 
   const containerRef = useRef(null);
-  const animationFrameId = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
-    let scrollPosition = 0;
-    const speed = 1; // Adjust the speed for scrolling
+    const isDesktop = window.innerWidth > 768;
 
-    const isMobile = window.innerWidth <= 768; // Mobile detection
-
-    // Scroll animation for larger screens only
-    if (!isMobile) {
-      const scrollCards = () => {
-        scrollPosition += speed;
-        if (scrollPosition >= container.scrollWidth - container.clientWidth) {
-          scrollPosition = 0; // Reset scroll position
-        }
-        container.scrollLeft = scrollPosition;
-        animationFrameId.current = requestAnimationFrame(scrollCards);
+    if (isDesktop) {
+      const cloneCards = () => {
+        // Clone the cards to create an infinite loop effect
+        const cards = Array.from(container.children);
+        cards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          container.appendChild(clone);
+        });
       };
-
-      animationFrameId.current = requestAnimationFrame(scrollCards);
+      cloneCards();
     }
-
-    return () => cancelAnimationFrame(animationFrameId.current); // Cleanup
   }, []);
 
   return (
@@ -70,19 +62,6 @@ const Benefits = () => {
               <div className="cards-container" ref={containerRef}>
                 {cardData.map((card, index) => (
                   <div key={index} className="card">
-                    <div className="card-header">
-                      <h4 className="card-title">{card.title}</h4>
-                      <div className="card-image">
-                        <img src={card.icon} alt="icon" />
-                      </div>
-                    </div>
-                    <p className="card-description">{card.description}</p>
-                  </div>
-                ))}
-
-                {/* Clone the cards for infinite scroll */}
-                {cardData.map((card, index) => (
-                  <div key={index + cardData.length} className="card">
                     <div className="card-header">
                       <h4 className="card-title">{card.title}</h4>
                       <div className="card-image">
