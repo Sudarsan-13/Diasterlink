@@ -1,0 +1,188 @@
+/* Main container for the About Us section */
+.about-us-section {
+ background-color: #f4f4f4;
+ padding: 20px;
+ border-radius: 10px;
+ gap: 20px;
+ display: flex; /* Use flexbox for alignment */
+ justify-content: center; /* Center child elements */
+ flex-wrap: wrap; /* Allow wrapping on smaller screens */
+ width: 100%;
+}
+
+.text-container {
+ width: 59%; /* Increased width for better text display */
+ width: 780px; /* Optional: max width for better control */
+ background-color: #fff;
+ border-radius: 20px 0 0 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start; /* Align items at the top */
+ gap: 5px; /* Reduce gap between elements */
+ height: 450px; /* Set fixed height for consistent appearance */
+}
+
+/* Title properties */
+.about-title {
+ font-family: 'Poppins', sans-serif;
+ font-size: 2.5rem; /* Adjust as needed */
+ font-weight: 700;
+ line-height: 5rem; /* Decrease line height */
+ margin: 40px 0 0 40px; /* Center horizontally */
+}
+
+/* Mission title properties */
+.mission-title {
+ font-family: 'Poppins', sans-serif;
+ font-size: 18px;
+ font-weight: 500;
+ line-height: 30px;
+ margin: 0 0 10px 40px; /* Center horizontally */
+}
+
+/* Paragraph properties */
+.mission-text {
+ font-family: 'Poppins', sans-serif;
+ font-size: 18px;
+ font-weight: 400;
+ line-height: 27px; /* Keep this for spacing */
+ color: #666;
+ margin: 0 0 10px 40px; /* Center horizontally */
+ width: 80%;
+}
+
+/* Avatar section */
+.avatar-section {
+ display: flex;
+ flex-direction: column;
+ align-items: left; 
+ margin: 20px 0 0 70px;
+}
+/* Avatar group with overlapping images */
+.avatar-group {
+  display: flex;
+  justify-content: left;
+}
+
+.avatar-image {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-left: -20px; /* Overlap each avatar */
+}
+
+.avatar-image:first-child {
+  margin-left: 0; /* No negative margin for the first image */
+}
+
+
+.avatar-caption {
+ font-family: 'Poppins', sans-serif;
+ font-size: 1rem;
+ color: #666;
+ margin:15px 0 0 20px;
+ text-align: center;
+ font-weight: 500px;
+}
+
+/* Right-side image container */
+.image-container {
+ flex: 0 0 35%; /* Use flex-basis for responsive width */
+ width: 500px; /* Optional: max width for better control */
+ overflow: hidden;
+}
+
+.about-image {
+ width: 100%;
+ height: 450px; /* Maintain aspect ratio */
+ object-fit: cover;
+ border-radius: 0 20px 20px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1300px) {
+ .text-container {
+  width: 50%; 
+ }
+
+ .image-container {
+  width: 50%; 
+ }
+}
+
+@media (max-width: 900px) {
+  .about-us-section{
+    flex-direction: column;
+  }
+
+  .text-container{
+    width: 100%;
+  }
+
+  .image-container{
+    width: 100%;
+  }
+  .about-image {
+  height: 400px; /* Increased height */
+  width: 100%; /* Maintain full width */
+  margin: 0 auto; /* Center the image */
+ }
+ .avatar-caption {
+ margin:10px 0 0 20px;
+}
+}
+
+@media (max-width: 768px) {
+ .about-image {
+  height: 500px; /* Increased height */
+  width: 100%; /* Maintain full width */
+  margin: 0 auto; /* Center the image */
+ }
+
+ .about-title {
+  font-size: 40px; /* Adjusted for smaller screens */
+ }
+
+ .mission-title {
+  font-size: 24px;
+ }
+
+ .mission-text {
+  font-size: 19px;
+ }
+  .avatar-image {
+    width: 50px;
+    height: 50px;
+    margin-left: -15px; /* Adjust overlap for smaller screens */
+  }
+  .avatar-caption {
+ margin:0px 0 0 20px;
+}
+}
+
+@media (max-width: 480px) {
+ .about-title {
+  font-size: 38px; /* Further adjust for mobile */
+ }
+
+ .mission-title {
+  font-size: 24px;
+ }
+
+ .mission-text {
+  font-size: 16px;
+ }
+ .avatar-section{
+  margin-left: 40px;
+ }
+  .avatar-image {
+    width: 40px;
+    height: 40px;
+    margin-left: -10px; /* Further reduce overlap for very small screens */
+  }
+  .avatar-caption {
+    font-size: 12px;
+}
+}

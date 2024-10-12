@@ -1,0 +1,113 @@
+/* General Styles */
+.real-time-section {
+  padding: 40px 20px;
+  background-color: f4f4f4;
+}
+
+.text-section {
+  text-align: left;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.image-section {
+  position: relative;
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 200px;
+}
+
+/* Image rotation and overlap */
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 26%;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+.img2 {
+  position: relative;
+  top: 30px;
+  left: -20%;
+  transform: rotate(-5deg);
+  z-index: 2;
+}
+
+/* Responsiveness for small devices */
+@media (max-width: 768px) {
+  .real-time-section {
+    padding: 20px;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  .image-section {
+    margin-top: 20px;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .img-container {
+    display: block;
+  }
+
+  .img1,
+  .img2 {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-description {
+    font-size: 0.85rem;
+  }
+}

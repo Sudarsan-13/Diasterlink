@@ -6,8 +6,9 @@ import {poppins} from "@fontsource/poppins";
 import HowItWorks from "./HowItWorks";
 import HowItWorks03 from "./HowItWorks03";
 import HowItWorks04 from "./HowItWorks04";
-import Benefits from "./Benefits";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import RealTimeSection from "./RealTimeSection";
+import AboutUs from "./AboutUs";
+import Benefits from "./Benefits";  
 import Footer from "./Footer";
 
 function App() {
@@ -15,12 +16,14 @@ function App() {
     <div className="App">
       
       <CustomNavbar />
-      <Homesection />
-      <Home2Section />
+      <Homesection/>
+      <Home2Section/>
       <HowItWorks />
       <HowItWorks03 />
       <HowItWorks04 />
-      <Benefits />
+      <RealTimeSection />
+      <AboutUs />
+      <Benefits />  
       <Footer />
     </div>
   );
