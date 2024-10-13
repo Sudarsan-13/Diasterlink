@@ -74,21 +74,19 @@
   color: #333;
 }
 
-/* CSS Keyframe for Continuous Infinite Scroll */
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Shift entire container left by 100% width */
+    transform: translateX(-100%); 
   }
 }
 
-/* Media Queries for smaller screens */
 @media screen and (max-width: 768px) {
   .cards-container {
     overflow-x: auto;
-    animation: none; /* Disable animation for mobile */
+    animation: none; 
   }
 
   .card-title{
@@ -117,12 +115,11 @@
   }
 }
 
-/* Hide scrollbars on mobile */
 .cards-container {
-  -ms-overflow-style: none; /* Internet Explorer */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 .cards-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none; 
 }

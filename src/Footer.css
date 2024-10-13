@@ -176,26 +176,26 @@
  }
 
  .footer-right {
-  max-width: 100%; /* Adjust the width of the footer-right for smaller screens */
-  text-align: left; /* Align content to center */
+  max-width: 100%; 
+  text-align: left; 
   line-height: 35px;
  }
 
  .links-list {
-  font-size: 18px; /* Increase the size of the link list */
+  font-size: 18px;
   font-weight: 500;
  }
 
  .link {
-  font-size: 16px; /* Increase font size for the links */
-  margin-bottom: 10px; /* Add more spacing between links */
+  font-size: 16px; 
+  margin-bottom: 10px; 
  }
 
  .vertical-line {
-  display: none; /* Hide the vertical line */
+  display: none;
  }
 
  .footer-right {
-  margin-bottom: 20px; /* Reduce space below link list */
+  margin-bottom: 20px; 
  }
 }

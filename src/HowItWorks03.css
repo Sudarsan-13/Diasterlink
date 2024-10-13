@@ -18,10 +18,9 @@
   line-height: 27px;
   text-align: center;
   max-width: 800px;
-  margin: 0 auto; /* Center the paragraph */
+  margin: 0 auto; 
 }
 
-/* Main container and section content */
 .how-it-works-new-container {
   background: #f4f4f4; 
   color: black; 
@@ -32,7 +31,7 @@
   max-width: 1354px;
   height: auto;
   border-radius: 30px;
-  background-color: #B1AFD1; /* Background for the new content */
+  background-color: #B1AFD1;
   padding: 20px;
   position: relative;
   margin: 0 auto;

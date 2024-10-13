@@ -1,4 +1,3 @@
-/* Navbar custom styles */
 
 .ONE{
   background-color: #f4f4f4;
@@ -14,23 +13,22 @@
   padding: 10px;
   margin: 20px 20px 0 20px ;
   transition: background-color 0.3s ease;
-  transform: translateY(-100px); /* Start offscreen */
-  opacity: 0; /* Start invisible */
-  animation: navbarDrop 1s ease forwards; /* Apply drop animation */
+  transform: translateY(-100px); 
+  opacity: 0; 
+  animation: navbarDrop 1s ease forwards; 
 }
 
 @keyframes navbarDrop {
   0% {
-    transform: translateY(-100px); /* Offscreen at the top */
-    opacity: 0; /* Invisible */
+    transform: translateY(-100px);
+    opacity: 0; 
   }
   100% {
-    transform: translateY(0); /* Final position */
-    opacity: 1; /* Fully visible */
+    transform: translateY(0); 
+    opacity: 1; 
   }
 }
 
-/* Rest of your existing styles */
 .nav-elements {
   display: flex;
   justify-content: center;
@@ -74,7 +72,6 @@
   background-color: transparent !important;
 }
 
-/* Make sure no other styles apply blackout */
 .offcanvas-backdrop.show {
   background-color: transparent !important;
 }
@@ -87,6 +84,6 @@
 
 @media (min-width: 992px) {
   .offcanvas-nav {
-    display: none; /* Hide off-canvas on large screens */
+    display: none; 
   }
 }

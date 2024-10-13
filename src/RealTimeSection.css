@@ -1,55 +1,65 @@
-/* General Styles */
-.real-time-section {
-  padding: 40px 20px;
-  background-color: f4f4f4;
+.real-time-container {
+  padding: 50px;
+  background-color: #f4f4f4;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.text-section {
+.real-time-text-section {
   text-align: left;
+  width: 50%;
+  margin-right: 260px;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+.real-time-title {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 65px;
 }
 
-.section-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.real-time-subtitle {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 60px;
 }
 
-.section-description {
+.real-time-description {
   font-size: 1rem;
   color: #666;
+  line-height: 30px;
+  width: 80%;
 }
 
-.image-section {
+.real-time-image-section {
   position: relative;
   text-align: center;
+  margin-right: 150px;
+  width: 45%;
 }
 
-.img-container {
+.real-time-img-container {
   position: relative;
   display: inline-block;
 }
 
-.img-container img {
-  max-width: 100%;
+.real-time-img-container img {
   height: auto;
   border-radius: 8px;
-  margin-left: 200px;
+  margin: 2rem;
 }
 
-/* Image rotation and overlap */
-.img1 {
+.real-time-img1 {
   position: absolute;
   top: 0;
-  left: 26%;
+  left: 40%;
   transform: rotate(-5deg);
   z-index: 1;
 }
 
-.img2 {
+.real-time-img2 {
   position: relative;
   top: 30px;
   left: -20%;
@@ -57,57 +67,181 @@
   z-index: 2;
 }
 
-/* Responsiveness for small devices */
-@media (max-width: 768px) {
-  .real-time-section {
+.real-time-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .real-time-container {
     padding: 20px;
   }
+  .real-time-text-section {
+    width: 45%; 
+    margin-right: 0px;
+  }
+  .real-time-image-section {
+    width: 30%; 
+  }
+}
 
-  .text-section {
+@media (max-width: 1300px) {
+  .real-time-text-section {
+    width: 60%;
+  }
+  .real-time-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .real-time-img1,
+  .real-time-img2 {
+    width: 100%;
+  }
+  .real-time-title {
+    font-size: 2.5rem;
+  }
+  .real-time-subtitle {
+    font-size: 1.5rem;
+  }
+  .real-time-description {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .real-time-img1,
+  .real-time-img2 {
+    width: 100%;
+  }
+  .real-time-text-section {
+    width: 70%; 
+  }
+}
+
+@media (max-width: 1000px) {
+  .real-time-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .real-time-img1,
+  .real-time-img2 {
+    width: 90%;
+  }
+  .real-time-text-section,
+  .real-time-image-section,
+  .real-time-description {
+    text-align: center;
+    margin: 0;
+    width: 100%; 
+  }
+  .real-time-description {
+    text-align: center;
+    width: auto; 
+  }
+}
+
+@media (max-width: 900px) {
+  .real-time-img1,
+  .real-time-img2 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .real-time-container {
+    padding: 20px;
+  }
+  .real-time-text-section {
     text-align: center;
   }
-
-  .image-section {
+  .real-time-image-section {
     margin-top: 20px;
     margin-left: 0;
     justify-content: center;
     align-items: center;
   }
-
-  .section-title {
+  .real-time-title {
     font-size: 2rem;
+    line-height: 30px;
+    font-weight: 900 !important;
   }
-
-  .section-subtitle {
+  .real-time-subtitle {
     font-size: 1.25rem;
   }
-
-  .section-description {
-    font-size: 0.9rem;
+  .real-time-description {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
   }
-
-  .img-container {
+  .real-time-img-container {
     display: block;
+    position: relative;
   }
-
-  .img1,
-  .img2 {
-    position: static;
-    transform: none;
+  .real-time-img1 {
+    width: 50%;
+    position: absolute;
+    top: -10px;
+    left: 40%;
+    transform: rotate(-5deg);
+  }
+  .real-time-img2 {
+    width: 50%;
+    position: relative;
+    top: 20px;
+    left: -15%;
+    transform: rotate(-5deg);
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 576px) {
-  .section-title {
+  .real-time-title {
     font-size: 1.75rem;
   }
-
-  .section-subtitle {
+  .real-time-subtitle {
     font-size: 1.2rem;
   }
+  .real-time-description {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px;
+  }
+  .real-time-img1 {
+    width: 45%; 
+    left: 40%;
+  }
+  .real-time-img2 {
+    width: 45%; 
+    left: -10%; 
+  }
+}
 
-  .section-description {
-    font-size: 0.85rem;
+@media (max-width: 500px) {
+  .real-time-container {
+    padding: 15px;
+  }
+  .real-time-title {
+    font-size: 1.5rem;
+  }
+  .real-time-subtitle {
+    font-size: 1.1rem;
+  }
+  .real-time-description {
+    font-size: 1rem;
+  }
+  .real-time-img1 {
+    width: 48%; 
+    left: 33%; 
+    top: -7px;
+  }
+  .real-time-img2 {
+    width: 48%; 
+    left: -16%; 
+    top: -7px;
   }
 }

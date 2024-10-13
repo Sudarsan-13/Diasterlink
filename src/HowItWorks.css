@@ -1,6 +1,7 @@
 .how-it-works-top-text {
   text-align: center;
   margin-bottom: 40px; /* Space between top text and container */
+  background-color: #f4f4f4;
 }
 
 .how-it-works-heading {
