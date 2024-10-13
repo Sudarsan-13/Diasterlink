@@ -24,7 +24,7 @@ const Footer = ({
             driven by the belief that knowledge saves lives.
           </p>
           <div className="app-buttons">
-            <a href="#hi" className="app-button">
+            <a href="playstore" className="app-button">
               <img
                 src="/Assets/playstore.png"
                 alt="Google Play"
@@ -32,7 +32,7 @@ const Footer = ({
               />
               <span className="app-text">Google Play</span>
             </a>
-            <a href="#" className="app-button">
+            <a href="appstore" className="app-button">
               <img
                 src="/Assets/appstore.png"
                 alt="App Store"

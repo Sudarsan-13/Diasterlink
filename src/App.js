@@ -3,7 +3,6 @@ import "./App.css";
 import CustomNavbar from "./CustomNavbar";
 import Homesection from "./Homesection";
 import Home2Section from "./Home2Section";
-import { poppins } from "@fontsource/poppins";
 import HowItWorks from "./HowItWorks";
 import HowItWorks03 from "./HowItWorks03";
 import HowItWorks04 from "./HowItWorks04";
