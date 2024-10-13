@@ -1,7 +1,17 @@
 import React from "react";
 import "./Footer.css"; // Import the CSS file
 
-const Footer = () => {
+const Footer = ({
+  homeRef,
+  aboutRef,
+  howItWorksRef,
+  featuresRef,
+  benefitsRef,
+}) => {
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -41,27 +51,43 @@ const Footer = () => {
           <h3 className="links-title">Useful Links</h3>
           <ul className="links-list">
             <li>
-              <a href="#" className="link">
+              <a href="#home" className="link" onClick={() => scrollToRef(homeRef)}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="link">
+              <a
+                href="#features"
+                className="link"
+                onClick={() => scrollToRef(featuresRef)}
+              >
                 Features
               </a>
             </li>
             <li>
-              <a href="#" className="link">
+              <a
+                href="#how-it-works"
+                className="link"
+                onClick={() => scrollToRef(howItWorksRef)}
+              >
                 How it works
               </a>
             </li>
             <li>
-              <a href="#" className="link">
+              <a
+                href="#about"
+                className="link"
+                onClick={() => scrollToRef(aboutRef)}
+              >
                 About us
               </a>
             </li>
             <li>
-              <a href="#" className="link">
+              <a
+                href="#benefits"
+                className="link"
+                onClick={() => scrollToRef(benefitsRef)}
+              >
                 Benefits
               </a>
             </li>
